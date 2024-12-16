@@ -8,6 +8,8 @@ jobs:
     with:
       range: '>= 12.17'
       type: minors
+      skip-ls-check: true
+      after_install: "npm link && npm link dunder-proto"
       command: "NODE_OPTIONS='--disable-proto=throw' npx tape 'tests/**/*.js'"
 
   delete:
@@ -15,6 +17,8 @@ jobs:
     with:
       range: '>= 12.17'
       type: minors
+      skip-ls-check: true
+      after_install: "npm link && npm link dunder-proto"
       command: "NODE_OPTIONS='--disable-proto=delete' npx tape 'tests/**/*.js'"
 
   node:
