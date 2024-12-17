@@ -1,6 +1,6 @@
 {
 	"name": "dunder-proto",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "If available, the `Object.prototype.__proto__` accessor and mutator, call-bound",
 	"main": false,
 	"exports": {
